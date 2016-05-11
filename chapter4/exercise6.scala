@@ -8,6 +8,6 @@ object exercise6 {
     ("Friday" -> java.util.Calendar.FRIDAY),
     ("Saturday" -> java.util.Calendar.SATURDAY),
     ("Sunday" -> java.util.Calendar.SUNDAY))
-
+x
   for((k, v) <- newMap) println(k + v)
 }
