@@ -2,7 +2,6 @@
 public class Car {
 
     private String manufacturer;
-
     private String modelName;
     private int modelYear;
     private String licensePlate;
@@ -14,25 +13,25 @@ public class Car {
         this.licensePlate = licensePlate;
     }
 
-    public Car(String manufacturer, String modelName, int modelYear, String licensePlate){
+    public Car(String manufacturer, String modelName, int modelYear){
         this.manufacturer = manufacturer;
         this.modelName = modelName;
         this.modelYear = modelYear;
+        this.licensePlate = "";
+    }
+
+    public Car(String manufacturer, String modelName, String licensePlate){
+        this.manufacturer = manufacturer;
+        this.modelName = modelName;
+        this.modelYear = -1;
         this.licensePlate = licensePlate;
     }
 
-    public Car(String manufacturer, String modelName, int modelYear, String licensePlate){
+    public Car(String manufacturer, String modelName){
         this.manufacturer = manufacturer;
         this.modelName = modelName;
-        this.modelYear = modelYear;
-        this.licensePlate = licensePlate;
-    }
-
-    public Car(String manufacturer, String modelName, int modelYear, String licensePlate){
-        this.manufacturer = manufacturer;
-        this.modelName = modelName;
-        this.modelYear = modelYear;
-        this.licensePlate = licensePlate;
+        this.modelYear = -1;
+        this.licensePlate = "";
     }
     
     public String getManufacturer(){
@@ -52,7 +51,7 @@ public class Car {
     }
 
     public void setLicensePlate(String licensePlate){
-        this.licensePlate = licensePlate
-            }
+        this.licensePlate = licensePlate;
+    }
 
 }
