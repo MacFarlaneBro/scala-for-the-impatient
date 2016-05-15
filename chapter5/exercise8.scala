@@ -1,4 +1,4 @@
-/* This way seems wrong but is both functionally identical to the solution asked for and more idiomatic of the scala language */
-class Car(val manufacturer: String, val modelName: String, val modelYear: Int = -1, var licensePlate = "") {
+class Employee(val name: String = "John Q. Public", var salary: Double = 0.0){
 
 }
+/* This format is preferable due to its concision and lack of boilerplate. */
