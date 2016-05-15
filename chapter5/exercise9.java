@@ -1,4 +1,3 @@
-/* This way seems wrong but is both functionally identical to the solution asked for and more idiomatic of the scala language */
 public class Car {
 
     private String manufacturer;
@@ -53,5 +52,6 @@ public class Car {
     public void setLicensePlate(String licensePlate){
         this.licensePlate = licensePlate;
     }
-
 }
+
+// The java class, written idiomatically with correct styling is about 52 lines longer than its scala equivalent.
