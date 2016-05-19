@@ -1,5 +1,5 @@
 object Reverser extends App {
 
-  println(args.reverse)
+  for(arg <- args.reverse) println(arg)
 
 }
